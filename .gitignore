@@ -1,6 +1,10 @@
 data
 libs
 *~
+background_corpus
+entity_expanded_corpus
+scripts
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
