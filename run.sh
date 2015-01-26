@@ -18,6 +18,8 @@ here=$(pwd)
 python $here/python_scripts/semeval2naf.py -i $here/SemEval-2015-task-13_original_data/data/semeval-2015-task-13-en.xml -o $here/data/data_en_naf
 ##########################
 
+
+
 ##########################
 #2) Call to the pos-tagger
 ##########################
@@ -31,6 +33,8 @@ do
 done
 ##########################
 
+
+
 ##########################
 #3) Call to the IMS
 ##########################
@@ -43,6 +47,8 @@ do
   echo Created $outfile
 done
 ##########################
+
+
 
 ##########################
 #4) Call to dbpedia ner
@@ -59,6 +65,8 @@ do
 done
 ##########################
 
+
+
 ########################## 
 #5) Generate the background corpus
 ##########################
@@ -68,12 +76,13 @@ python python_scripts/generate_background_corpus.py -il $my_list -of $out_folder
 ##########################
 
 
+
 ##########################
 # 6) Generate the entity overlapping extended corpus
 ##########################
 in_folder=$out_folder
 out_folder=$here/entity_expanded_corpus
-min_matches=10
+min_matches=5
 python python_scripts/corpus_expansion_entities.py -i $in_folder -o $out_folder -m $min_matches
 ##########################
 
