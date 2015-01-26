@@ -1,4 +1,15 @@
 #!/usr/bin/env python
+
+##############################################
+# Author:   Ruben Izquierdo Bevia            # 
+#           VU University of Amsterdam       #
+# Mail:     ruben.izquierdobevia@vu.nl       #
+#           rubensanvi@gmail.com             #
+# Webpage:  http://rubenizquierdobevia.com   #
+# Version:  1.0                              #
+# Modified: 26-jan-2015                      #
+##############################################
+
 import filenames_and_paths
 import time
 import argparse

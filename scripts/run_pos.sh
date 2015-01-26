@@ -1,1 +1,0 @@
-java -jar /home/izquierdo/cltl_repos/vua-wsd-sem2015/libs/ixa-pipe-pos/target/ixa-pipe-pos-1.3.2.jar tag -m /home/izquierdo/cltl_repos/vua-wsd-sem2015/libs/ixa-pipe-pos/pos-models-1.3.0/en/en-maxent-100-c5-baseline-dict-penn.bin
