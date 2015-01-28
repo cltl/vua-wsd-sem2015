@@ -83,7 +83,7 @@ python python_scripts/generate_background_corpus.py -il $my_list -of $out_folder
 in_folder=$out_folder
 out_folder=$here/entity_expanded_corpus
 min_matches=5
-python python_scripts/corpus_expansion_entities.py -i $in_folder -o $out_folder -m $min_matches
+python python_scripts/corpus_expansion_entities.py -i $in_folder -o $out_folder -m $min_matches -naf
 ##########################
 
 ##########################
