@@ -9,6 +9,7 @@ You will need just to clone the repository and run the `instal.sh` script, which
 * ixa-pipe-pos: pos-tagger developed by the IXA group of the basque country (https://github.com/ixa-ehu/ixa-pipe-pos)
 * It Makes Sense (IMS): wrapper around the IMS system for WSD to allow the use of NAF files (https://github.com/rubenIzquierdo/it_makes_sense_WSD)
 * dbpedia_ner: wrapper around the dbpedia spotlight NER and NED for working with NAF files (https://github.com/rubenIzquierdo/dbpedia_ner)
+* predominantsense: wrapper around predominant sense algorithm (https://bitbucket.org/MartenPostma/predominantsense)
 
 The version of the IMS system only works with java 1.6, so make sure you are using that version, you can check with `java -version`. If you are
 using any other version, you will need to modify the file `libs/it_makes_sense_WSD/ims/testPlain.sh` and set the `java` command to the exact
