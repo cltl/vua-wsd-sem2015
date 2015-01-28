@@ -24,6 +24,7 @@ sys.path.append('./libs')
 from collections import defaultdict
 from dbpediaEnquirerPy import Cdbpedia_ontology, Cdbpedia_enquirer
 from wikipediaEnquirerPy.query_wikipedia import *
+from subprocess import Popen, PIPE
 import time
 import argparse
 
