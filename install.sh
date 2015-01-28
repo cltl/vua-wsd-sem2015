@@ -110,4 +110,12 @@ git clone https://github.com/cltl/KafNafParserPy
 ####################
 
 
+#####################
+# Predominant sense #
+# see predominant_sense/INSTALL for instructions about dependencies#
+cd $here
+git clone git@bitbucket.org:MartenPostma/predominantsense.git
+cd predominantsense
+bash install.sh
+cd $here
 ####################
