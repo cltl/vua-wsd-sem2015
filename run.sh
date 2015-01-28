@@ -72,7 +72,7 @@ done
 ##########################
 out_folder=$here/background_corpus
 rm -rf $out_folder 2> /dev/null		#The output folder is removed
-python python_scripts/generate_background_corpus.py -il $my_list -of $out_folder -bd -naf
+python python_scripts/generate_background_corpus.py -il $my_list -of $out_folder -bd -naf -all_nodes
 ##########################
 
 
