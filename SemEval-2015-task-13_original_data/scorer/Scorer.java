@@ -80,7 +80,7 @@ public class Scorer {
 		BufferedReader in = new BufferedReader(new FileReader(file));
 		String l;
 		while ((l = in.readLine()) != null) {
-			String[] ll = l.split("[ \t]");
+			String[] ll = l.split("\t");
 			if (ll.length<3) continue;
 			// Check if we are interested in this doc.
 			int d = Integer.parseInt(ll[0].substring(ll[0].indexOf('d')+1, ll[0].indexOf('.')));
