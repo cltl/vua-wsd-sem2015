@@ -86,4 +86,11 @@ min_matches=5
 python python_scripts/corpus_expansion_entities.py -i $in_folder -o $out_folder -m $min_matches
 ##########################
 
- 
+##########################
+# (7) run predominant sense algorithm
+##########################
+cd $here/predominantsense
+bash predominant_sense.sh 'yes' 'n_v' '100' '5000' 'no' 'yes' $here/entity_expanded_corpus
+##########################
+
+
