@@ -1,0 +1,2 @@
+be.v be.v.01 0.8 manual
+have.v have.v.04 0.8 manual
