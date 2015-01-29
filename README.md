@@ -33,7 +33,7 @@ install.sh
 To run the whole system, you will need to call to the script `run.sh`. This script will automatically call to all the modules
 in our pipeline for processing the original SemEval2015 files that can be found at the folder `SemEval-2015-task-13_original_data`.
 It will create a new folder `data_en_naf`, where all the NAF files created will be stored. Different files with different suffixes
-represent intermediate results of the whole pipeline.
+represent intermediate results of the whole pipeline. After running `run.sh`, 'run_experiment.sh' will run the experiment. The output can be found in evaluation/stats.
 
 ##Contact
 
