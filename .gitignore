@@ -4,7 +4,9 @@ libs
 background_corpus
 entity_expanded_corpus
 scripts
-
+log*
+background_corpus.metadata
+entity_expanded_corpus.log
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
