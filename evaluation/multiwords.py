@@ -106,6 +106,6 @@ with open(semeval_output) as infile:
             if check:
                 (one,two) = check[0]
                 sensekey = bigrams[(one,two)]
-                output = " ".join([one, two, sensekey])
+                output = "\t".join([one, two, sensekey])
                 outfile.write(output+"\n")
 

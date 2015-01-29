@@ -39,3 +39,20 @@ python evaluation/remove_pos_errors.py -i $stats_final_results/semeval_output.mu
 python evaluation/remove_unwanted_lemmas.py -n $final_results -i $stats_final_results/semeval_output.pos -l $lemma_errors
 python evaluation/remove_unwanted_lemmas.py -n $final_results -i $stats_final_results/semeval_output.multi.pos -l $lemma_errors
 
+#scorer
+cd $here/SemEval-2015-task-13_original_data/scorer
+
+system=$stats_final_results/semeval_output.multi.pos.lemma
+gold=$here/SemEval-2015-task-13_original_data/keys/gold_keys/EN/
+
+pwd
+for file in $(ls $gold) ;
+do
+    gold=$(readlink -f $file)
+    echo
+    echo $gold
+    echo $system
+    java Scorer $gold $system
+done
+
+
