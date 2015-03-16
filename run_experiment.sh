@@ -48,11 +48,11 @@ gold=$here/SemEval-2015-task-13_original_data/keys/gold_keys/EN/
 pwd
 for file in $(ls $gold) ;
 do
-    gold=$(readlink -f $file)
-    echo
-    echo $gold
+    gold_keys=$gold/$file
     echo $system
-    java Scorer $gold $system
+    echo
+    echo $file
+    java Scorer $gold_keys $system
 done
 
 

@@ -122,8 +122,7 @@ class SemevalConverter():
                     if wn30_sensekey:
                         outfile.write("\t".join([identifier,
                                                 identifier,
-                                                #try without wn:
-                                                wn30_sensekey])+"\n")
+                                                "wn:"+wn30_sensekey])+"\n")
                         
 if __name__ == "__main__":
     #parse user input
