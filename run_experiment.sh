@@ -9,6 +9,7 @@ ims_label="WordNet-3.0"
 gold_standard=$here/resources/test_data
 suffix=".annotated"
 pos_tagger="standard"
+only_ours="yes"
 
 #additional paths
 path_manual=$here/evaluation/manual_sensekeys.txt
@@ -21,7 +22,7 @@ export stats_final_results=$here/evaluation/stats
 rm -rf $stats_final_results
 mkdir -p $stats_final_results
 
-python predominantsense/scripts/python/add_our_system_to_naf.py -s $suffix -i $gold_standard -p $pos_tagger -b $pred_sense -m $path_manual -c $classifier -l $sys_label -t $threshold -w $ims_label
+python predominantsense/scripts/python/add_our_system_to_naf.py -s $suffix -i $gold_standard -p $pos_tagger -b $pred_sense -m $path_manual -c $classifier -l $sys_label -t $threshold -w $ims_label -o $only_ours
 
 
 #here should be inserted the script to convert to semeval output
