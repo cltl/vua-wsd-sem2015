@@ -68,7 +68,7 @@ echo "path_pos_tagger = '$here/scripts/run_pos.sh'" >> ../python_scripts/filenam
 ####################
 git clone https://github.com/rubenIzquierdo/it_makes_sense_WSD
 cd it_makes_sense_WSD
-install_ims.sh
+bash install_ims.sh
 ims=$here/libs/it_makes_sense_WSD/call_ims.py
 echo "python $ims" >> ../../scripts/run_ims.sh
 chmod +x ../../scripts/run_ims.sh
