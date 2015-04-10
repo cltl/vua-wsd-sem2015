@@ -216,7 +216,7 @@ if __name__ == '__main__':
     ## Read input files
     list_of_documents = []
     if args.input_folder is not None:
-        list_of_documents = glob.glob(args.input_folder+'/*')
+        list_of_documents = glob.glob(args.input_folder+'/*.naf')
     elif args.input_list:
         for line in args.input_list:
             list_of_documents.append(line.strip())
